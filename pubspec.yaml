@@ -24,7 +24,6 @@ dependencies:
   dotted_border: 
   image_cropper: 
   image_picker: 
-  image_crop_plus_updated: ^0.7.1
   
 dev_dependencies:
   flutter_test:

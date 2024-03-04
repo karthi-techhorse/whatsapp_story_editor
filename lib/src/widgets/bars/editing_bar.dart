@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:image_cropper/image_cropper.dart';
 import 'package:whatsapp_story_editor/src/controller/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -35,12 +36,14 @@ editingBar({required BuildContext context, required File file}) {
             onTap: () {
               takeScreenshotAndReturnMemoryImage(getScreenshotKey)
                   .then((MemoryImage imageData) {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => CropView(image: file)
-                        // builder: (context) => CropView2(image:file,title: "Hello",)
-                    ));
+                     Get.find<EditingController>().backgroundImage = file;
+                    
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                        // builder: (context) => CropView(image: file)
+                //         // builder: (context) => CropView2(image:file,title: "Hello",)
+                //     ));
               });
             }),
         const SizedBox(width: 16.0),
