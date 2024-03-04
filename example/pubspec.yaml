@@ -38,7 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   dotted_border: ^2.0.0+2
-  image_cropper: ^4.0.1
+  image_cropper: 
   image_picker: 
 
   whatsapp_story_editor:
